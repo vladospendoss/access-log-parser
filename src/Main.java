@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws LongLineException, IOException {
+    public static void main(String[] args) throws LongLineException {
         int count = 0;
         while (true) {
             String path = new Scanner(System.in).nextLine();
@@ -44,7 +44,7 @@ public class Main {
                 System.out.println("Длина самой длинной строки в файле: " + maxLength);
                 System.out.println("Длина самой короткой строки в файле: " + minLength);
             } catch (IOException ex) {
-                throw ex;
+                ex.printStackTrace();
             }
         }
     }
