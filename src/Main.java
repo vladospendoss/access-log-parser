@@ -43,7 +43,7 @@ public class Main {
                 System.out.println("Общее количество строк в файле: " + countLines);
                 System.out.println("Длина самой длинной строки в файле: " + maxLength);
                 System.out.println("Длина самой короткой строки в файле: " + minLength);
-            } catch (IOException ex) {
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
         }
